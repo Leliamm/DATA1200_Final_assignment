@@ -1,7 +1,126 @@
-footer {
-    padding-top: 1em;
-    display: end;
-    width: 100%;  
-    color: whitesmoke;
-    padding-top: 1em;
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
   }
+  
+  @font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);  
+  }
+
+  p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;   
+  }
+.background1{
+    align-items: center;
+    background: url('Img/Clock.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;   
+  }
+  
+  .heading1{
+    text-align: left;
+    font-size: 2rem;
+    font-family:'lato', sans-serif;
+    left: 10px;
+    width: 100%;
+    padding-bottom: 1.3rem;
+  }
+  
+  .text1{
+    text-align: left;
+    font-family: 'lato', sans-serif;
+    font-size: 1.2rem !important;    
+  }
+  
+  .text2{
+    text-align: left;
+    font-size: century;    
+  }
+  
+  .text3{
+    text-align: left;
+    font-size: century;    
+  }
+  
+  .text4{
+    text-align: left;
+    font-size: century;
+  }
+  
+  .text5{
+    text-align: left;
+    font-size: century;    
+  }
+  
+  .text6{    
+    font-size: 2rem !important;   
+    text-align: justify;
+  }
+  .funText {
+    display: grid;
+    grid-template-columns: 75% 25%; 
+}
+.heading1 {
+    grid-area: 1/1;    
+}
+.text1 {
+    grid-area: 2/1;
+    margin-bottom: 0.5em;
+}
+.text2 {
+    grid-area: 3/1;
+}
+.text3 {
+    grid-area: 4/1;
+}
+.text4 {
+    grid-area: 5/1;
+}
+.text5 {
+    grid-area: 6/1;
+    margin-bottom: 2em;
+}
+.text6 {
+    grid-area: 7/1;
+}
+
+/* For skjermer som er større enn 600px */
+@media only screen
+and (min-width: 600px){
+    html {
+        font-size: 1.7rem;
+    }
+    main {
+      margin: 1rem;
+    }
+    .imaginarypeople {      
+      grid-template-columns: 33% 33% 33%; 
+      grid-template-rows: 50% 50%;
+    }
+    .funText { 
+     grid-template-columns: 45% 55%;
+    }
+}
+
+
+/* For skjermer som er større enn 960px */
+@media only screen and (min-width: 960px){
+    html {
+        font-size: 3rem;
+    }   
+    main {
+      margin: 2rem;
+    }
+    .imaginarypeople {      
+      grid-template-columns: 20% 20% 20% 20% 20%; 
+      grid-template-rows: 50% 50%;
+    }
+    .funText { 
+        grid-template-columns: 75% 25%;
+       }
+}
