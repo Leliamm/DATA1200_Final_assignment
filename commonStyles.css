@@ -9,47 +9,52 @@
   src: url(./fonts/Roboto/Roboto-Bold.ttf);
   
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
-    background-image: url("Img/Black-Abstract-Wallpapers-HD-Download.jpg");
+    background-image: url("Img/Black-Abstract-Wallpapers-HD-Download.jpg");    
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    font-size: 1.2rem;
-    min-height: 100wh;
+    font-size: 0.5em;
+    min-height: 100vh;
+    width: 100vw;
+    color: whitesmoke;
+    
+}
+
+header{
+  width: 95%;
+  height: 4rem;    
+}
+main {
+  margin: 2rem;
+  display: grid;
 }
 
 #page {
   padding: 2em 2em;
-  width: 95vw;
   margin: auto;
-  overflow: visible;
-  height: 95vh;
-  color: whitesmoke;
-}
-
-header{
-  width: 100%;
-  height: 60px;
-}
+  overflow: visible;  
+  }
 
 #nav{
-  text-align: right;
-  font-size: larger;
-  padding-right: 15px;
   background: inherit;
-  text-transform: uppercase;
-  margin: inherit;
-  overflow: hidden;
-  width: 90vw;
+  text-transform: uppercase;  
+  display: grid;
+  grid-template-columns: 15% 25% 25% 25% 5%;
+  grid-auto-flow: row;
+  justify-content: space-around;  
+  padding-bottom: 3em;
+  font-size: 1.2em;
   }
 
 a {
   color:burlywood;
-  padding: 1em;
-  text-decoration: none;
+  text-decoration: none;  
   }
 
 a:hover{
@@ -60,40 +65,42 @@ a:hover{
 .text {
   text-size-adjust: 30%;
   font-family: sans-serif;
-  font-size: larger;
   padding: 0em 3em 0em 1em;
   text-align: justify;
-  color: whitesmoke;
-  }
+   }
 
   h1{
     text-size-adjust: 50%;
+    font-size: 1.4rem;
     font-family: sans-serif;
-    font-size: xx-large;
-    text-align: center;
-    color: whitesmoke;
+     text-align: center;
   }
   h2{
     text-size-adjust: 40%;
+    font-size: 1.2rem;
     font-family: sans-serif;
-    font-size: x-large;
     text-align: center;
     font-weight: normal;
     padding-top: 3em;
-    color: whitesmoke;        
+    display:inline-flexbox;
+   
   }
   h3{
       text-size-adjust: 30%;
-      font-family: sans-serif;
-      font-size: larger;
-      color: whitesmoke;
+      font-size: 1rem;
+      font-family: sans-serif;       
     }
+  p {
+    font-size: 0.9rem;
+      font-family: sans-serif; 
+  }
 
 .card {
   padding: 20px;
   margin: auto;
   width: 100%;
   display: flex;
+  background: inherit;
 }
 
 .card2 {
@@ -101,21 +108,16 @@ a:hover{
   padding: 0em 1em 0em 1em;
   width: 85vw;
   text-align: justify;
-  text-size-adjust: 25%;
-  font-size: larger;
   box-sizing: inherit;
   word-wrap: normal;
   align-content: center;
   margin: inherit;
 
 }
-#portopage{
-  height: 50vw; 
-  vertical-align: center;
- }
 
 img{
   width: 100%;
+  height: 100vh;
   border-radius: 3em;
   box-shadow: 10px 10px 10px 10px lightskyblue;
 }
@@ -125,59 +127,55 @@ hr{
   padding-top: 5em 0em 0em 0em;
 }
 
-
 figcaption{
   padding: 2em;
   color: whitesmoke;
   text-align: center;
 }
 button {
-    padding: 20px 20px 20px 20px ;
-    display: inline-block;
+    padding: 20px 20px 20px 20px ;    
     font-size: medium;
     margin: 10em 8em 3em 8em;
     cursor: pointer;
     background:inherit;
     border-radius: 3em;
     border: burlywood 1px solid;    
-    font-family: sans-serif;
     font-weight: bold;
     word-spacing: 1em;    
     }
-  .button:hover {
-    background-color: blue;
-    color: white;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
 
-     
-.right {
-  padding-left: 100px;
-  padding-top: 100px;
-  width: 50%;
-}
-  
-.left {
-  padding: 15px;
-  flex:1;
-  margin: 10px;
-}
-.homelist{list-style-type: none;
-  padding: 10px;
-  color: whitesmoke;
-}
-.list {
-  list-style-type: none;
-  padding: 10px;
-  color: whitesmoke;
-}
+  .button:hover {
+    background-color: burlywood;
+    color: black;
+
+    }
 
 footer {
   padding-top: 1em;
-  display: end;
-  width: 100%;  
-  color: whitesmoke;
+  width: 90%;   
   padding-top: 1em;
+  font-size: 0.9em; 
+  align-items:flex-end;
+}
+
+/* For skjermer som er større enn 600px */
+@media only screen
+and (min-width: 600px){
+    html {
+        font-size: 1.7rem;
+    }
+    main {
+      margin: 1rem;
+    }
+}
+
+
+/* For skjermer som er større enn 960px */
+@media only screen and (min-width: 960px){
+    html {
+        font-size: 2rem;
+    }   
+    main {
+      margin: 2rem;
+    }
 }
