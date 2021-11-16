@@ -9,30 +9,112 @@
 </head>
 
 <body>
-  <div id="page">
-     <header>
-      <nav id="nav">
-        <a href="index.html">Home</a>
-        <a href="TopicalInfo.html">Topical Info</a>
-        <a href="Reflection.html">Reflection</a>
-        <a href="Accessibility.html">Accessibility</a>
-        <a href="Fun.html">Fun</a>
-      </nav>
-    </header>
+  <header>
+    <!--traditional navigation bar, common for all pages of the website-->
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="TopicalInfo.html">Topical Info</a>
+      <a href="Reflection.html">Reflection</a>
+      <a href="Accessibility.html">Accessibility</a>
+      <a href="Fun.html">Fun</a>
+    </nav>
+    <!--div used to create the transparency effect under the navigation bar-->
+    <div id="navTransitionDiv"></div>
+  </header>
 
-    <main>
+  <main>
+    <!--first homepage div is used to split the content on the homepage in two sections showed each on its own -->
+    <div id="frontpage">
+      <h1> Welcome to our OsloMet experiences! </h1>
+      <h2> This is a page created by one of the DATA1200 groups for the final assignment for the introduction
+        to HTML and CSS course. The page contains several pages showproffing the skills that we gain during this
+        particular course in our first semester of our first year with this prestigious educational instituion. You can
+        brows
+        the pages by clicking the desired page of the navigation bar on the top of the page. </h2>
+      <!--button linking to the next section of the page-->
+      <button type="button"> <a href="#bio"> Short bio of our group</a>
+      </button>
+    </div>
+    <!--second homepage div used to define the bottom part of the page. it contains both description and images-->
+    <div id="bio">
+      <h2> Short group bio</h2>
+      <p id="bioDescription">Our group formed this autumn and it contains five members. We all met as part of our TKD
+        studies and even though
+        we
+        all come from different backgrouds, so we bonded as the unexperienced and unpriviledged students
+        with no prior experience in CSS and HTML. We worked together for the two mandatory assignments that we have been
+        given, as well as for this
+        one last step in completting DATA1200. During our time together we discovered that each of us has a bit of an
+        artist
+        inside and found a commom quote:
+      <blockquote id="homequote"
+        cite="https://www.goodreads.com/quotes/7783174-my-dear-find-what-you-love-and-let-it-kill">
+        Find what you love and let it kill you. Let it drain you of your all.
+        Let it cling onto your back and weigh you down into eventual nothingness.
+        Let it kill you and let it devour your remains. For all things will kill you, both slowly and fastly,
+        but it's much better to be killed by a lover. (Charles Bukowski) </blockquote>
+      </p>
 
-      <h1> Welcome to this page! </h1>
-      <h2>DATA1200 group. Our OsloMet experiences.</h2>
- 
+      <h2>Here is a pictographic visualisation of ourselvs: </h2>
+      <div class="imaginarypeople">
+        <figure>
+          <img class ="portrait" src="Img/gazelle.png"
+            alt="Picture of a brown and white gazelle (animal) with large hornes walking on a black background." />
+            <footer><small>The image is taken from
+              <a href="https://www.pond5.com/stock-footage/item/123970697-animal-call-gazelle-walking-black-background"
+                target="blank"> this link</a>.
+              </small></footer>
+          <figcaption>The handsome self of one of us. 
+          </figcaption>
+        </figure>
+        <figure>
+          <img class ="portrait" src="Img/axalotl.jpg" alt="Picture of an axalotl (animal) on a dark background." />
+        <footer><small>The image is taken from 
+        <a href="http://fandeloup.f.a.pic.centerblog.net/o/0e9307b7.jpg" target="blank"> here</a>.
+      </small></footer>
+          <figcaption>The handsome self of one of us. 
+          </figcaption>
+        </figure>
+        <!--needs presentation picture with description AND source link-->
+        <figure>
+          <img class ="portrait" src="Img/cat2.png" alt="Picture of a gray and white baby cat wearing a dark coloured overall. The cat is sticking its tounge out in defiance." />
+          <footer><small>The image is taken from
+            <a href="https://pixabay.com/photos/cat-kitten-pet-lick-tongue-6723256/?fbclid=IwAR1hXf-2I7fKQrLIQaBQLpNnkk8JFEeuUmqEYo6u8Hd4RvpzPt3Ukrsdw_c" target="blank"> here</a>.
+            </small></footer>
+          <figcaption>The handsome self of one of us. 
+          </figcaption>
+        </figure>
 
+        <figure>
+          <img class ="portrait" src="Img/inorog.png"
+            alt="Picture of a white inorog (fantastic animal that represents a horse with a horn on its forhead) with its hair waiving in a mild wind. The picture has a black background." />
+            <footer><small>  The image is taken from
+              <a href="https://1.bp.blogspot.com/-SXeOWGIm-Aw/Vc3ZripC9LI/AAAAAAAAEyU/x52_Uq_Myuo/s1600/Unicorn.jpg?fbclid=IwAR24kl_JZ8zcWCJI3AEKLcm0jPkABtMWFSxO2d4sv4wqHmfgl6JoJ8OrAHE"
+                target="blank"> here</a>.
+              </small></footer>
+            <figcaption>The handsome self of one of us. 
+          </figcaption>
+        </figure>
+        <figure>
+          <img class ="portrait" src="Img/Rhinocerose.jpg"
+            alt="Picture of the head of a two horned rinocerose (animal) on a dark background." />
+            <footer><small>  The image is taken from
+              <a href="https://s1.1zoom.me/b4444/190/Rhinoceroses_Black_background_Head_548756_1920x1080.jpg"
+                target="blank"> here </a>.
+              </small></footer>
+          <figcaption>The handsome self of one of us. 
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--traditional footer with a horisontal line for visual prposes, common for all pages of the website-->
     <hr>
     <footer class="copyright">
-       &copy; This is a project created for the final assignment in DATA1200. We use automatically generated text from <a id="a" href="https://lipsum.com/" target="blank"> Lorem Ipsum </a> And some  
-      <a id="a" href="https://this-person-does-not-exist.com/en" target="blank"> links </a> from websites.
+      &copy; This is a project created for the final assignment in DATA1200. We use automatically generated text from <a
+        href="https://lipsum.com/" target="blank"> Lorem Ipsum </a> and links from various websites. The footer of each page contains 
+        more detailed information regarding the sources of the material used on the respective page.
     </footer>
 
-  </div>
+  </main>
 </body>
-
 </html>
