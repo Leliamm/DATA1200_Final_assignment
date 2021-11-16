@@ -19,42 +19,66 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-size: 0.5em;
+    font-size: 14px;
     min-height: 100vh;
     width: 100vw;
-    color: whitesmoke;
-    
+    color: whitesmoke;    
 }
 
 header{
-  width: 95%;
-  height: 4rem;    
+  width: 100%;     
+  position: fixed;
+  top: 0;  
+  z-index: 2;
 }
 main {
-  margin: 2rem;
+  margin: 1rem;
+  padding: 3em;
   display: grid;
+  text-align: justify;
 }
 
-#nav{
-  background: inherit;
+nav{
   text-transform: uppercase;  
   display: grid;
-  grid-template-columns: 15% 25% 25% 25% 5%;  
-  grid-auto-flow: row;
+  grid-template-columns: auto auto auto auto auto; 
+  grid-column-gap: 5px;
   justify-content: space-around;  
-  padding: 2em 2em;
-  font-size: 1.2em;  
+  padding-top: 1.5em;
+  font-size: 0.8em;  
   text-align: right;
+  background-color: black;
+  z-index: 2;
   }
-.imaginarypeople {
+  #navTransitionDiv {
+    height: 20px;
+    background: linear-gradient(180deg,#080808 0%,gray 100%);
+    opacity: 0.9;  
+  }
+  #frontpage{
+    height: 80vh;
+    text-align: center;   
+    padding-top: 6em; 
+  }
+ #bio{
+    padding-top: 4em;
+    position: relative;
+ }
+  #bioDescription{
+    margin-top: 2em;
+  }
+  #homequote{
+    font-size: 1.2em;
+  }
+div.imaginarypeople {
   display: grid;
-  grid-template-columns: 50% 50% 20% 20% 20%; 
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%; 
+  grid-template-rows: 33% 33% 34%;
 }
 
 a {
   color:burlywood;
-  text-decoration: none;  
+  text-decoration: underline;  
   }
 
 a:hover{
@@ -68,31 +92,33 @@ a:hover{
   text-align: justify;
    }
 
+   h1, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+}
+h1, h2{
+  padding-bottom: 0.5em;
+}
   h1{   
-    font-size: 1.4rem;
-    font-family: sans-serif;
+    font-size: 1.2rem;    
     text-align: center;
     margin-block-start: 0em;
     margin-block-end: 0em;
     font-weight: bold;
   }
   h2{  
-    font-size: 1.2rem;
-    font-family: sans-serif;
+    font-size: 1rem;   
     text-align: center;
     font-weight: normal;
-    padding-top: 1em; 
+    padding-top: 2em; 
     margin-block-start: 0em;
     margin-block-end: 0em;   
   }
   h3{
       text-size-adjust: 30%;
-      font-size: 1rem;
-      font-family: sans-serif;       
+      font-size: 0.9rem;            
     }
   p {
-    font-size: 0.9rem;
-    font-family: sans-serif; 
+    font-size: 0.8rem;
     margin-block-start: 0em;
     margin-block-end: 0em;
   }
@@ -114,18 +140,10 @@ a:hover{
   word-wrap: normal;
   align-content: center;
   margin: inherit;
-
 }
 
 img{
-  width: 100%;
-  border-radius: 3em;
-  box-shadow: 5px 5px 5px 5px lightskyblue;
-}
-
-hr{
-  margin: 5em 0em 0em 0em;
-  padding-top: 5em 0em 0em 0em;
+  width: 100%; 
 }
 
 figcaption{
@@ -134,22 +152,25 @@ figcaption{
   text-align: justify;
 }
 button {
-    padding: 20px 20px 20px 20px ;    
-    font-size: medium;
-    margin: 10em 8em 3em 8em;
+    padding: 20px;    
+    margin: 3em;
     cursor: pointer;
     background:inherit;
     border-radius: 3em;
     border: burlywood 1px solid;    
     font-weight: bold;
-    word-spacing: 1em;    
-    }
+    word-spacing: 0.5em;    
+}
 
-  .button:hover {
-    background-color: burlywood;
-    color: black;
+.button:hover {
+  background-color: burlywood;
+   color: black;   
+}
 
-    }
+hr{
+  margin: 2em 0em 0em 0em;
+  padding-top: 5em 0em 0em 0em;
+}    
 
 footer {
   padding-top: 1em;
@@ -158,39 +179,93 @@ footer {
   font-size: 0.9em; 
   align-items:flex-end;
 }
+.portrait{
+  border-radius: 3em;
+  box-shadow: 5px 5px 5px 5px lightskyblue;
+}
 
 /* For skjermer som er større enn 600px */
 @media only screen
 and (min-width: 600px){
-    html {
-        font-size: 1.7rem;
+  html {
+     font-size: 18px;
+  }
+  nav{
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+    grid-column-gap: 5px;
+    justify-content: space-around;  
+    padding-top: 1.5em; 
+    text-align: right;    
+  }
+  #navTransitionDiv {
+    height: 20px;
+    background: linear-gradient(180deg,#080808 0%,gray 100%);
+    opacity: 0.9;  
+  }
+  .funPageTransition{
+    height: 20px;
+    background: linear-gradient(180deg,#080808 0%,red 100%);
+  
+  }
+
+  main {
+    margin: 1.5rem;
+  }
+  
+  #frontpage{     
+     margin-top: 4rem;
+  }
+  
+  button {         
+    font-size: medium;
+  }
+  
+  #bio{
+    position: relative;
+    padding-top: 3rem;
+  }
+  
+  div.imaginarypeople {      
+    grid-template-columns: 33% 33% 34%; 
+    grid-template-rows: 50% 50%;
+
     }
-    main {
-      margin: 1rem;
-    }
-    .imaginarypeople {      
-      grid-template-columns: 33% 33% 33%; 
-      grid-template-rows: 50% 50%;
-    }
-    .text6{ 
-      grid-template-columns: 45% 55%;      
-    }
+  
+  .funText { 
+    grid-template-columns: 45% 55%;
+  }
 }
 
 
 /* For skjermer som er større enn 960px */
 @media only screen and (min-width: 960px){
-    html {
-        font-size: 3rem;
-    }   
-    main {
-      margin: 2rem;
-    }
-    .imaginarypeople {      
-      grid-template-columns: 20% 20% 20% 20% 20%; 
-      grid-template-rows: 50% 50%;
-    }
-    .text6{ 
-      grid-template-columns: 40% 60%;      
-    }
+  html {
+    font-size: 24px;
+  }   
+  
+  nav{
+    font-size: 1.3em;
+  }
+
+  main {
+    margin: 3rem;
+  }
+  #frontpage{     
+    margin-top: 4rem;
+  }
+
+  button {         
+    font-size: large;
+  }
+    
+  div.imaginarypeople {      
+    grid-template-columns: 20% 20% 20% 20% 20%;    
+    grid-template-rows: 100%    
+  }
+
+  .funText { 
+    grid-template-columns: 75% 25%;
+  }
 }
