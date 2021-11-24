@@ -1,7 +1,170 @@
-footer {
-    padding-top: 1em;
-    display: end;
-    width: 100%;  
-    color: whitesmoke;
-    padding-top: 1em;
-  }
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="commonStyles.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topical Info</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a class="activePage" href="TopicalInfo.html">Topical Info</a>
+            <a href="Reflection.html">Reflection</a>
+            <a href="Accessibility.html">Accessibility</a>
+            <a href="Fun.html">Fun</a>
+        </nav>
+        <!--div used to create the transparency effect under the navigation bar-->
+        <div id="navTransitionDiv"></div>
+    </header>
+
+    <main>
+        <article>
+            <h1> Topical Info </h1>
+            <p>Fake news is everywhere in the media. It can be found both in sosial media,
+                and most media that provide news. Fake news has the purpose to either make entertaining
+                articles that sell, share different political viewpoints or propaganda. Fake news is
+                essentially manipulated news, whose purpose is to convince the audience that their opinion
+                is factual. Where the news is not entirely true, but has been taken out of context in order
+                to create something scandalous. This type of news is especially common in countries
+                characterized by a dictatorship rule. This may be to get the population on their side.
+                Fake news can also be used to damage a person's reputation, by providing false information.
+                On another hand we think fake news is really not something serious, because it has been
+                used in a way where politicians try to persuade people that they would never do any wrong.
+                I think there is a lot of fake news where people share some outrageous stories disguised
+                as real news to shock or persuade someone to do or think something about something. </p>
+            <p>
+                Fake news is also where journalists twist words of certain people, in order to make a
+                clickbait article/title so that the company will get financial benefit from that article.
+                There is no definitive answer to what fake news is, but a common definition can be misleading
+                and untrue information that is shared, usually to manipulate. The best way of dealing with
+                fake news is to fact check every site with other sites. You should always og to a trusted site
+                not like wikipedia and dagbladet where everyone essentially could write anything. You should
+                also always think critically about everything. Lastly, its also really important that you check
+                the date. You can never know when the media is pulling a april fools joke. </p>
+            <h2>Lorem ipsum dolor sit amet </h2>
+            <p>Pellentesque quis urna at velit mollis vestibulum sed quis nisl. In scelerisque lacus ut fermentum
+                blandit.
+                Integer augue arcu, ultrices vitae odio vitae, molestie varius nisl. Maecenas bibendum sodales tortor
+                vel
+                sollicitudin. Sed ligula neque, imperdiet eget dictum et, viverra eu lectus. Nulla facilisi.
+                Sed magna mauris, egestas eget augue vel, gravida placerat est. Sed posuere urna
+                sit amet est pulvinar interdum. Donec massa velit, sagittis quis felis sit amet, gravida rutrum nunc.
+                Nunc fringilla sagittis aliquet. Nulla et volutpat nisi, vitae luctus nisl. In odio sapien, lobortis
+                vel pulvinar sit amet, pellentesque eu tellus. In non porttitor enim. Pellentesque lobortis eget lorem
+                eu
+                placerat. Proin in est ut ante egestas ornare. Morbi semper imperdiet mi ut efficitur. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sit amet eros
+                hendrerit, vestibulum risus a, malesuada magna.
+                Duis bibendum commodo blandit. Duis consectetur erat at ipsum venenatis, eget laoreet lacus feugiat.
+                Curabitur quis tortor rutrum, euismod ante ut, molestie nibh. Curabitur quis cursus mi. In vitae
+                hendrerit nulla.
+                Morbi ac varius sem. Quisque et pellentesque nisi, rutrum condimentum quam. Maecenas rhoncus tempor est
+                vel ornare.
+                Fusce varius venenatis cursus. Aenean finibus fringilla dolor sed semper. Nullam odio erat, luctus ut
+                facilisis ut,
+                laoreet sit amet elit. Vestibulum metus felis, condimentum vitae ligula quis, suscipit semper felis.
+                Phasellus
+                lobortis consectetur lorem in tincidunt.
+                Maecenas posuere tellus id vulputate varius. In lacinia lobortis posuere. Phasellus lacinia enim sed
+                convallis
+                venenatis. Curabitur quis eros in erat pharetra accumsan. Donec vel nisi laoreet, finibus quam sit amet,
+                eleifend eros.
+                Phasellus eu porta tortor, cursus malesuada nulla. Morbi fermentum posuere massa, sit amet tincidunt
+                orci aliquet
+                hendrerit. Aliquam lobortis sagittis faucibus. Nunc at auctor lacus, sed laoreet velit. Fusce laoreet
+                massa a rhoncus
+                porttitor.</p>
+            <p>Vivamus vel mattis sapien, at fringilla justo. Donec posuere pellentesque urna, mattis porttitor risus
+                tincidunt ut.
+                Vivamus et mollis lorem. Etiam ut mollis diam. In elit nisi, sollicitudin sit amet porta at, scelerisque
+                a sapien.
+                In dictum augue sed bibendum vestibulum. Sed eleifend congue nulla, et consequat felis. Fusce tristique
+                turpis quis purus euismod, non tincidunt odio hendrerit. Sed a sapien sed nisl dapibus tempus faucibus
+                sed diam.
+                Integer vel imperdiet elit. Mauris et lacinia neque.
+                Sed sit amet fringilla nibh. Integer imperdiet nibh et risus gravida, id iaculis mi scelerisque. Quisque
+                tincidunt
+                in diam at feugiat. Suspendisse imperdiet, purus facilisis sodales consequat, tortor neque euismod elit,
+                tincidunt
+                tincidunt neque ante a augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque
+                efficitur
+                convallis. Donec vel lorem vitae metus aliquet sagittis eu non lorem. Nulla risus odio, tincidunt at
+                quam at, tempor
+                rhoncus justo. Mauris lacinia lacus et interdum tristique. Pellentesque auctor urna quis est malesuada,
+                et consectetur
+                enim volutpat. Etiam mattis velit tincidunt rhoncus porttitor. Integer ultrices erat vitae sem
+                sollicitudin, eget
+                tristique magna venenatis. Nullam eget iaculis massa. In tristique purus non massa lobortis, a dictum
+                sapien tincidunt. Morbi mollis nisl dui, in tempor nunc accumsan quis.
+
+                Quisque quam sem, mollis et placerat ac, euismod eu dui. Curabitur volutpat, justo id porta commodo,
+                quam ipsum tempus elit, rutrum mollis lectus nisl vitae justo. Pellentesque tempus nunc eget euismod
+                porttitor. Vestibulum non lorem sit amet ex commodo convallis condimentum sed elit. Mauris gravida
+                ornare est eu tempus. Proin eu sem ut risus porta sollicitudin. Duis hendrerit in justo sed pulvinar.
+                Vivamus aliquet tincidunt dui, et vestibulum lectus. Nulla elit diam, aliquet eget tempor quis,
+                vestibulum in ligula.
+
+                Aenean auctor convallis erat, sit amet sollicitudin mauris venenatis at. Suspendisse euismod ultrices
+                leo eu dapibus. Aenean a maximus lectus, a euismod massa. Suspendisse condimentum id augue tempor
+                malesuada. Ut justo leo, fringilla in lacinia nec, tempus nec nulla. Nullam in faucibus risus, quis
+                venenatis massa. Aenean at ex a turpis maximus fringilla.
+
+                Aliquam ut egestas nisl. Sed quis vestibulum ipsum. Aenean at massa non eros gravida suscipit lacinia
+                gravida lacus. Suspendisse gravida vitae neque quis consequat. Vestibulum sit amet condimentum nisl, sed
+                rutrum velit. Suspendisse tortor purus, imperdiet non suscipit eget, tincidunt a risus. Praesent eu
+                purus semper ex porta elementum. Vivamus libero turpis, efficitur quis mauris vitae, ultricies
+                pellentesque mi. Phasellus purus lacus, dictum eu finibus et, facilisis eu libero. Aliquam ut neque
+                tellus.</p>
+        </article>
+
+        <section>
+            <h2>References:</h2>
+            <ol>
+                <li> Gordon Pennycook, David G. Rand, <cite>The Psychology of Fake News</cite>, Trends in Cognitive
+                    Sciences,
+                    Volume 25, Issue 5, 2021, Pages 388-402, ISSN 1364-6613,
+                    <a href="https://doi.org/10.1016/j.tics.2021.02.007" target="blank">
+                        https://doi.org/10.1016/j.tics.2021.02.007</a>
+                    (<a href="https://www.sciencedirect.com/science/article/pii/S1364661321000516"
+                        target="blank">https://www.sciencedirect.com/science/article/pii/S1364661321000516</a>).
+                </li>
+                <li>Silva, M.(2021, 19.nov).
+                    <cite> Climate change: Conspiracy theories found on foreign-language Wikipedia</cite>, BBC News
+                    Tech,
+                    <a href="https://www.bbc.com/news/technology-59325128" target="blank">
+                        https://www.bbc.com/news/technology-59325128 </a>
+                </li>
+                <li> Ulloa, Hector (2021, 27. oktober). <cite>Vi drukner i løgn</cite>.
+                    Dagbladet. <a href="https://www.dagbladet.no/meninger/vi-drukner-i-logn/74450977" target="blank">
+                        https://www.dagbladet.no/meninger/vi-drukner-i-logn/74450977 </a> </li>
+                <li> Wikipedia, <cite> Falsk nyhet</cite>, Wikimedia Foundation, 23. sep. 2021, 16 november 2021,
+                    <a href="https://no.wikipedia.org/wiki/Falsk_nyhet" target="blank">
+                        https://no.wikipedia.org/wiki/Falsk_nyhet
+                    </a>
+                </li>
+                <li> Wikipedia, <cite>Fake news</cite>, Wikimedia Foundation, 13 November 2021, 16 november 2021,
+                    <a href="https://en.wikipedia.org/wiki/Fake_news" target="blank">
+                        https://en.wikipedia.org/wiki/Fake_news </a>
+                </li>
+            </ol>
+        </section>
+
+
+        <hr>
+        <footer class="copyright">
+            &copy; Website created as the final asingment for DATA1200 at OsloMet.
+            All picture are online picutres from.... <a href="https://www.gettyimages.no/" target="blank"> Getty
+                Images </a>. The background picture
+            is taken from <a href="https://www.apglearning.in/full-stack-course/" target="blank">
+                APG Learning</a>.
+        </footer>
+
+        </div>
+    </main>
+</body>
+
+</html>
