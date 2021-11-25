@@ -1,0 +1,297 @@
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Bold.ttf);  
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: 0.2s;
+}
+/* */
+/* Setting up the body css and overriding the main user agent stylsheet settings, as well as the general properties for the font family, text size and color and other dysplay settings */
+body{
+    background-image: url("Img/Black-Abstract-Wallpapers-HD-Download.jpg"); /*colour pattern of the background used to avoid potential issues for colourblind people */
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+    width: 100vw;
+    color: whitesmoke; /*colour pattern of the text used to avoid potential issues for colourblind people*/      
+}
+
+/* Setting the common properties of the header, in which the navigation bar is also included, as fixed on the top of the screen with the 100% width
+the z index is used to move the header navbar in front of other elements on the page*/
+header{
+  width: 100%;     
+  position: fixed;
+  top: 0;  
+  z-index: 2; /* if deleted will set the navbar and header under other content of the pages*/
+}
+
+/*Setting the common properties of the contents found in main. The padding is set in such a way that the content of the page
+does not overlap with the accessibility button that takes users to the main content of each page*/
+main {
+  padding: 8em; 
+  text-align: justify;
+}
+
+/* common settings for the navigation bar. The font size is selected on grounds of the responsivness of the screen on low resolutions. */
+nav{
+  text-transform: uppercase;   
+  padding-top: 1.5em;
+  font-size: 0.8em;    
+  background-color: black; /* needed to make the navigation menu readble when scrolling over other content on the page*/
+  }
+
+  /* ul tag used for accessibility reasons after checking the code on  */
+nav ul{
+  list-style: none;
+  display: flex;  
+  justify-content: space-evenly;
+  align-items: right;
+  font-stretch: semi-condensed;
+  width: 100%;    
+  padding: 0% 1%;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+  }
+/* adding extra elements to help visually identify where in the navigation bar the user is hovering */
+  nav a:hover{
+    outline: 1px dashed burlywood;
+    outline-offset: 4px;
+  }
+  /* adding extra elements to help visually identify on which page of the website the user finds itself*/
+  .activePage{
+    outline: 1px solid burlywood;
+    outline-offset: 4px;
+  }
+  /* used to add the transpacenty bar under the navigation bar and offer a smotther transition between the navigation bar and the content of each page */
+  #navTransitionDiv {
+    height: 20px;
+    background: linear-gradient(180deg,#080808 0%,gray 100%);
+    opacity: 0.9;  
+  }
+  /* id used to determine what appears on the users viewport when first opening the website*/
+  #frontpage{
+    height: 80vh; /* viewport hight selected in order to fit both the navigation bar and the #frontpage on 100% of the users viewport height */    
+    padding-top: 6em; 
+  }
+  /* button created for accessibility reasons so that users can jump to the main content of the page easely */
+  .mainContentButton{
+    position: fixed; /*the position of the button is fixed where people with disabilityes normally expect to find it, in the upper right corner of each page*/
+    top:5rem; 
+    right: 1%;
+    margin: 1px;
+    padding-right: 7em;  
+    background:black;
+    opacity: 0.8; /*opacity and background colour set for visual purposes in case the button overalps with other parts of the main content at lower resolutions*/
+    border-radius: 2em;
+    border: rgb(10, 10, 10) 0.5px solid;    
+    font-weight: lighter;
+    word-spacing: 0.1em;  
+    z-index: 2;
+  }
+  #mainContent{
+    padding-top: 15%;
+  }
+  /* positioning of the button sending the user to the second half of the homepage*/
+ #bio{
+    padding-top: 4em;
+   }
+ #bioH2{
+   text-align: center;
+ }
+ /* this id is used to push the down the "short bio group" section of the page so that it is not covered by the navigation bar*/
+  #bioDescription{
+    margin-top: 2em;
+  }
+  /* overriding user agent stylesheet for the <homequte> tag*/
+  #homequote{
+    font-size: 1.2em;
+  }
+  /* this div sets the frame for the grid containing the "portrait" pictures at the bottom of the homepage */
+div.imaginarypeople {
+  display: grid;
+  grid-template-columns: 50% 50%; 
+  grid-template-rows: 33% 33% 34%;
+}
+/* common settings for links*/
+a {
+  color:burlywood;
+  text-decoration: underline;  /* permanent text decoration used or accessibility purposes */
+  }
+
+  /*visualy identifies when the user is hovering over a link */
+a:hover{
+  color: whitesmoke;  
+}
+  
+/* setting consistent fonts for the text sections, used for accessibility of dyslexic people */
+h1, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+}
+h1, h2{
+  padding-bottom: 0.5em;
+}
+  h1{   
+    font-size: 1.2rem;    
+    text-align: center; 
+    margin-block-start: 0em; /* overrides user agent stylesheet */
+    margin-block-end: 0em; /* overrides user agent stylesheet */
+    font-weight: bold;
+  }
+  h2{  
+    font-size: 1rem;   
+    text-align: justify;
+    font-weight: normal; /* overrides user agent stylesheet */
+    padding-top: 2em; 
+    margin-block-start: 0em; /* overrides user agent stylesheet */
+    margin-block-end: 0em;   /* overrides user agent stylesheet */
+  }
+  h3{
+      text-size-adjust: 30%;
+      font-size: 0.9rem;            
+    }
+
+  p {
+    font-size: 0.8rem;
+    margin-block-start: 0em; /* overrides user agent stylesheet */
+    margin-block-end: 0em; /* overrides user agent stylesheet */
+  }
+/* sets all images to fit into their respective container. Very important! */
+img{
+  width: 100%; 
+}
+/* setting general display atributes of the caption figures */
+figcaption{
+  padding: 2em 0em; 
+  text-align: justify;
+}
+/* setting general display atributes of the caption figures */
+button {
+    padding: 0.7em;   
+    align-self: center; 
+    margin-top: 3em;
+    transform: translate(50%, 50%);
+    cursor: pointer;
+    background:inherit;
+    border-radius: 3em;
+    border: burlywood 1px solid;    
+    font-weight: bold;
+    word-spacing: 0.3em;    
+}
+#bioButton{
+margin-block-start: 0em;
+margin-block-end: 0em;
+margin: auto;
+transform: translate(-1%, 50%);
+position: relative;
+display: grid;
+grid-template-columns: auto auto auto;
+}
+
+/* button:hover {
+  background-color: burlywood;
+  color: black;
+} */
+
+/* creates the line on top of the footer*/
+hr{
+  margin: 2em 0em 0em 0em;
+  padding-top: 5em  0em;
+}    
+/* sets the general structure of the footer*/
+footer {
+  padding-top: 1em;
+  width: 90%;   
+  padding-top: 1em;
+  font-size: 0.9em; 
+  align-items:flex-end;
+}
+/* sets the border radius and shaddow for the small "portrait" pictures on the hompeage*/
+.portrait{
+  border-radius: 3em;
+  box-shadow: 5px 5px 5px 5px lightskyblue;
+}
+
+/* For screens with a resolution higher than 600px */
+@media only screen
+and (min-width: 600px){
+  html {
+     font-size: 18px; /* increases general font size*/
+  }
+  /* increases font size of the navigation bar and changes padding to a value that is appropriate for 
+  the correct visual display */
+  nav{
+    font-size: 1.2em; 
+    padding-top: 1.5em;       
+  }
+  /* changes the distance of the button taking users to the main content so that it does not overlapp with the 
+  navigation bar at screen resolutions closer to the phone resolution */
+  .mainContentButton{    
+    top: 7rem;   
+  }
+  #mainContent{
+    padding-top: 10%;
+  }
+
+/* adjusts the margin of main in accordance with the screen resolution */
+  main {
+    margin: 1.5rem;
+  }
+  /* adjusts the margin of main in accordance with the screen resolution */
+  #frontpage{     
+     margin-top: 4rem;
+  }
+  /* adjusts the margin of main in accordance with the screen resolution */
+  button {         
+    font-size: medium;
+  }
+  /* adjusts the position of the of main in accordance with the screen resolution */
+  #bio{
+    position: relative;
+    padding-top: 3rem;
+  }
+  /* changes the number of columns and rows for the grid display of the portrait images on homepage */
+  div.imaginarypeople {      
+    grid-template-columns: 33% 33% 34%; 
+    grid-template-rows: 50% 50%;
+    }
+}
+
+/* For screen with a resolution higher than 960px */
+@media only screen and (min-width: 960px){
+  html {
+    font-size: 24px; /* adjusts the general font size in accordance to the screen resolution*/
+  }   
+  
+  nav{
+    font-size: 1.3em; /* adjusts the navigation bar font size in accordance to the screen resolution*/
+  }
+  #mainContent{
+    padding-top: 7%;
+  }
+  #frontpage{     
+    margin-top: 4rem; /*adjusts distance from the top of the of the main content of each page in accordance to the screen resolution*/
+  }
+/*adjusts button size in accordance to the screen resolution*/
+  button {         
+    font-size: large;
+  }
+   /* changes the number of columns and rows for the grid display of the portrait images on homepage */ 
+  div.imaginarypeople {      
+    grid-template-columns: 20% 20% 20% 20% 20%;    
+    grid-template-rows: 100%    
+  }
+}
