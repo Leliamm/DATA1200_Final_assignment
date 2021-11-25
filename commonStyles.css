@@ -138,7 +138,7 @@ a:hover{
 }
   
 /* setting consistent fonts for the text sections, used for accessibility of dyslexic people */
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     font-family: 'Lato', sans-serif;
 }
 h1, h2{
@@ -164,14 +164,23 @@ h1, h2{
       font-size: 0.9rem;            
     }
 
-  p {
+  h4, p {
     font-size: 0.8rem;
+    padding-top: 0.5rem;
     margin-block-start: 0em; /* overrides user agent stylesheet */
     margin-block-end: 0em; /* overrides user agent stylesheet */
   }
 /* sets all images to fit into their respective container. Very important! */
 img{
   width: 100%; 
+}
+/* overriding user agent stylesheet defaults */
+figure{
+  padding-top: 1rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
 }
 /* setting general display atributes of the caption figures */
 figcaption{
@@ -223,6 +232,30 @@ footer {
 .portrait{
   border-radius: 3em;
   box-shadow: 5px 5px 5px 5px lightskyblue;
+}
+/* class used to place a grid around the pictures on the Accessibility page*/
+.contradictoryFeedback{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+#altTextTooShort{
+  grid-row-start: 1;
+}
+#altTextTooLong{
+  grid-row-start: 2;
+}
+.navBarGrid{
+  display: grid;
+  grid-template-columns: auto; 
+  grid-template-rows: auto auto;
+}
+#navBarAccessibilityCheck{
+  grid-row-start: 1;
+}
+#navBarBefore{
+  grid-row-start: 2;
 }
 
 /* For screens with a resolution higher than 600px */
@@ -293,5 +326,29 @@ and (min-width: 600px){
   div.imaginarypeople {      
     grid-template-columns: 20% 20% 20% 20% 20%;    
     grid-template-rows: 100%    
+  }
+  /* addapting the grid with the accessibility check images into a structure that is appropriate for the screen resolution */
+  .contradictoryFeedback{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  #altTextTooShort{
+    grid-column-start: 1;
+  }
+  #altTextTooLong{
+    grid-column-start: 2;
+  }
+
+  .navBarGrid{
+    display: grid;
+    grid-template-columns: auto auto; 
+    column-gap: 2px;
+  }
+  #navBarAccessibilityCheck{
+    grid-column-start: 1;
+  }
+  #navBarBefore{
+    grid-column-start: 2;
   }
 }
