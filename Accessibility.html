@@ -12,103 +12,138 @@
   <div id="page">
 
     <header>
-      <nav id="nav">
-        <a href="index.html">Home</a>
-        <a href="TopicalInfo.html">Topical Info</a>
-        <a href="Reflection.html">Reflection</a>
-        <a href="Accessibility.html">Accessibility</a>
-        <a href="Fun.html">Fun</a>
+      <nav tabindex="0">
+        <ul>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="TopicalInfo.html">Topical Info</a> </li>
+          <li> <a href="Reflection.html">Reflection</a> </li>
+          <li> <a class="activePage" href="Accessibility.html">Accessibility</a> </li>
+          <li> <a href="Fun.html">Fun</a> </li>
+        </ul>
       </nav>
+      <!--div used to create the transparency effect under the navigation bar-->
+      <div id="navTransitionDiv"></div>
     </header>
-
     <main>
-      <h1 id="portohome"> Accessibility </h1>
-      <div id="portopage">
-     <div class="container">
-        <button type="button">  <a href="#human"> Sematic tags </a></button>
-        <button type="button"> <a href="#existential"> Screen readers </a></button>
-        <article class="text">
-          <p class="text">Integer sit amet gravida eros. Vivamus sit amet maximus risus, quis condimentum enim.
-          Morbi turpis elit, pellentesque at leo eget, lobortis venenatis est. Nulla hendrerit lacus a nibh ultrices
-          luctus.
-          Donec et sem ac erat vestibulum ultricies id eget purus. Phasellus convallis fringilla gravida. Nunc commodo
-          dui id
-          libero rhoncus, id aliquam mi feugiat. Pellentesque eget lectus non magna eleifend fringilla vel quis purus.
-          Proin a turpis
-          at ipsum accumsan tempus nec ac eros. Curabitur scelerisque vehicula hendrerit. Sed vitae mi tristique,
-          gravida mi nec,
-          hendrerit ligula. Fusce commodo molestie diam at congue.</p>
-      </article>
-      </div>
-      <div class="card2">
-        <div>
-          <h2 id="human"> Sematic tags</h2>
-          <article class="text"> 
-            <button type="button"> <a href="#portohome">Go Up</a></button>
-            <p class="text"> Report of the preparations we did to ensure we would use different semantic tags.
-
-              While planning the website we took into account the fact that people with different disabilities may access
-              the website.
-    
-              We were especially interested in how colorblind people, people unable to see and people with dyslexia may
-              interact with the website.
-    
-              In order to account for colorblind people, we showed the website to a person who suffering from colorblindness
-              to make sure that
-    
-              the website is friendly. Taking into account the feedback we received from a dyslexic person during one of the
-              DATA1200 classes,
-    
-              we decided to use a very common font so that it would be easier for a dyslexic to read.
-    
-              For people who need to use readers, we used different tags like the following semantic tags: </p>
-            <div class="card2">
-              <div class="text">
-                <li> &lt;article&gt; </li>
-                <li> &lt;figcaption&gt; </li>
-                <li> &lt;figure&gt; </li>
-                <li> &lt;footer&gt; </li>
-                <li> &lt;header&gt; </li>
-                <li> &lt;main&gt; </li>
-                <li> &lt;nav&gt; </li>
-                <li> &lt;section&gt; </li>
-              </div>
-            </div>
-            <p class="text">
-              We used the &lt;article&gt; tag to specify self-contained content.
-              The &lt;figcaption&gt; tag defines a caption for a &lt;figcaption&gt; element.
-              We used the &lt;figcaption&gt; tag to specify self-contained content, we used it for our photos.
-              We used the &lt;footer&gt; tag to inform about where we got our images.
-              We used the &lt;header&gt; element to represent a container for our navbar.
-              We used the &lt;main&gt; tag to specify the main content of our document.
-              The &lt;nav&gt; tag defines our set navigation links.
-              The &lt;section&gt; tag defines a section in a document.
-              The reason we used the sematic tags we used was because we found that it was the most appropriate for the kind
-              of elements we used in this task.
-              You can read more about sematic tags
-              <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">here</a>.
-            </p>
-          </section>
-       
-      <div class="card2">
-        <div>
-          <h2 id="existential"> Screen readers</h2>
-          <article class="text"> 
-            <button type="button"> <a href="#portohome">Go Up</a></button>
-            Ut suscipit rutrum sem nec ornare. Vivamus in placerat lacus. Nullam id nisl sit amet dui maximus feugiat
-            vitae non massa. Donec ut accumsan leo. 
-          </article>
+      <!--mainContentButton class is used for accessibility pruposes to send the user back to the main content of the page -->
+      <button class="mainContentButton" type="button"> <a href="#mainContent"> Main Content</a>
+      </button>
+      <h1 id="mainContent"> Accessibility </h1>
+      <section>
+        <h2>What is web accesibility?</h2>
+        <p>Web accessibility is the wide known phenomenon that a website should be accessible to as many individuals as
+          possible (Persson et. al. 2015). A website with good web accessibility is easy to access and use for all
+          people. This includes people with and without disabilities. For instance, normal people using other devices
+          with different screen sizes, or people with visual impairments.</p>
+        <p>For this assignment we attempted to remove barriers which made our website inaccessible.</p>
+      </section>
+      <section>
+        <h2>Content</h2>
+        <ul>
+          <li>1 How did we test web accessibility?</li>
+          <ul>
+            <li>1.1 Things we have changed</li>
+            <li>1.2 Change not needed</li>
+            <ul>
+              <li>1.2.1 Contradictory feedback</li>
+            </ul>
+          </ul>
+          <li>2 Web accesibility beyond the test</li>
+        </ul>
+      </section>
+      <section>
+        <h2>How did we test web accessibility?</h2>
+        <p>To test web accessibility, we used an automated test, <a href="https://achecker.us/checker/index.php" target="blank">AChecker</a>, on all our pages. The website evaluated our
+          HTML-code and gave us feedback on how we could improve our accessibility. We aimed for the grade AA or higher,
+          since this indicated that there were no known problems with our code. </p>
+          <figure>
+            <img src="Img/accessibilityReviewMain.png" alt="This is a screenshot from the website Achecker that show that this website is AA graded and that there are no knwon accessibility problems.">
+            <figcaption>Accessibility review made automatically by the website <a href="https://achecker.us/checker/index.php" target="blank">AChecker</a> </figcaption>
+          </figure>
+          <p>Even so, we still made active decisions
+            to improve our accessibility beyond what the test showed. The test also gave us a list of potential problems,
+            which we carefully found and assessed. We fixed the ones we thought were applicable to our case.</p>
+      </section>
+        <section>
+          <h3>Things we have changed</h3>
+          <h4>Navigation bar</h4>
+          <div class ="navBarGrid">
+          <figure>
+            <img id="navBarAccessibilityCheck" src="Img/navbarChangeNecessary.png" alt="This is a screenshot from the website Achecker that show a potential problem in our HTML code with the navigation bar.">
+            <figcaption>Issue dettected by <a href="https://achecker.us/checker/index.php" target="blank">AChecker</a> </figcaption>
+          </figure>          
+          <figure>
+            <img id = "navBarBefore" src="Img/navBarBefore.png" alt="This is a screenshot of our HTML document showing the code for the navigation bar before we changed it. The code is white text on a black backgrounnd">
+            <figcaption>Code before the accessibility check</figcaption>
+          </figure>
         </div>
-    
+        <p>According to the automated check, the navigation bar is a list of links and must be marked appropriately.
+          Therefore, we encapsuled our navigation bar with the semantic tag &lt;ul&gt; and the corresponding
+          &lt;li&gt; for each item on the list.
+          This ensures an isolated section with information, with <strong>excellent</strong> structure.</p>
+          <figure>
+            <img src="Img/navBarAfter.png" alt="This is a screenshot of our HTML document showing the code for the navigation bar after we changed it to comply with accessibility. The code is white text on a black backgrounnd">
+            <figcaption>Code after the accessibility check</figcaption>
+          </figure>
 
-    
-    <hr>
-    <footer class="copyright">
-       &copy; This is a project created for the final assignment in DATA1200. We use automatically generated text from <a id="a" href="https://lipsum.com/" target="blank"> Lorem Ipsum </a> And some  
-      <a id="a" href="https://this-person-does-not-exist.com/en" target="blank"> links </a> from websites.
-    </footer>
+          <h4>"Skip to main content" button (with link)</h4>
+          <p>According to the automated check we needed a “skip to main content” button. This will elevate our pages
+            because our users can easily skip to the main content. Without this button, the process of navigating the
+            website could be a tedious process for various people, especially for our friends with visual impairments.
+          </p>
+        </section>
+
+        <section>
+          <h3>Change not needed</h3>
+          <h4>Format for h1, h2 and h3</h4>
+          <p>According to the automated check, h1, h2 are potentially used for formatting. This is not the case. We used
+            our header elements as section headers to structure our different themes. We only used formatting in a CSS
+            file that is separated from the HTML files that we used in the accessibility check.</p>
+          <h4>Primary language</h4>
+          <p>According to the automated check, our webpages should only have one primary language. However, we used
+            dummy text because it was allowed in our task description. Therefore, we choose to ignore the feedback. </p>
+
+          <h3>Contradictory feedback</h3>
+          <div class="contradictoryFeedback" >
+          <figure>
+            <img id = "altTextTooLong" src="Img/altTextTooLong.png" alt = "This is a screenshot from the website Achecker that informs is that the description text of the picture is too long.">
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img id = "altTextTooShort" src="Img/altTextTooShort.png" alt = "This is a screenshot from the website Achecker that informs is that the description text of the picture is too short.">
+            <figcaption></figcaption>
+          </figure>
+        </div>
+          <h4>Alt text for images</h4>
+          <p>According to the automated check, we had two potential problems with our “alt” attribute to all our images.
+            First, it assumed our alt descriptions should have been longer. Then it commented that our texts were too
+            long. We choose to disregard both statements. Which lead to a detailed visual description for the users who
+            cannot see them. Our alt text make it a better experience using a screen reader.</p>
+        </section>
+      </section>
+      <section>
+        <h2>Web accessibility beyond the accesibility test</h2>
+        <p>We used other accessibility tests to improve our visually impaired users experience. For instance, we used
+          strong color contrasts for our texts, images, and background images. We tested our website used an online <a
+            href="https://www.color-blindness.com/coblis-color-blindness-simulator/" target="blank">colorblind test</a> to make sure
+          colorblind people had no trouble seeing the different colors in our website. We also made sure to use the
+          right sematic tags, and lines under all our links, so it would be easier to see the links properly. Lastly, we
+          used fonts which makes it easy to read. As a result, people with visual impairments can still enjoy our page,
+          without compromise. </p>
+        <p>Some other coding changes we made include correct sematic tags and attributes accordingly. We used the
+          &lt;html&gt;“lang” attribute to define our primary language. Furthermore, for all our images, we used the
+          “alt” attribute. Lastly, we used “back to main content” buttons for our website for easy “scrolling” and tried
+          to make our website easy to navigate.</p>
+      </section>
+      <hr>
+      <footer class="copyright">
+        &copy; This is a project created for the final assignment in DATA1200. This page presents the accessibility part
+        of our
+        website. We have checked the accessibility of the website on the <a href="https://achecker.us/checker/"
+          target="blank"> AChecker </a> website.
+      </footer>
   </div>
-</main>
+  </main>
 </body>
 
 </html>
